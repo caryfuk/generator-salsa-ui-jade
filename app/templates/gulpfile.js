@@ -15,19 +15,21 @@ gulp.task('less', function() {
     .pipe(minifyCss({keepBreaks: false}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('public/dist/styles'))
+    .pipe(livereload());
 });
 
 gulp.task('jade', function() {
   gulp.src('public/src/jade/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('public/dist'))
+    .pipe(livereload());
 });
 
 gulp.task('watch', function() {
   livereload.listen();
 
   gulp.watch('public/src/less/**/*.less', ['less']);
-  gulp.watch('public/src/jade/*.jade').on('change', livereload.changed);
+  gulp.watch('public/src/jade/*.jade', ['jade']);
 });
 
 gulp.task('develop', function() {
