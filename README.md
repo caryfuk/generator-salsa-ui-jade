@@ -1,12 +1,12 @@
 # Generator salsa-ui <a href='https://github.com/salsita'><img align='right' title='Salsita' src='https://www.google.com/a/cpanel/salsitasoft.com/images/logo.gif?alpha=1' _src='https://1.gravatar.com/avatar/d413290a5fe1385efcf5a344d4a0b588?s=50' /></a>
 
-> Very simple yeoman generator to allow simple HTML/LESS mock-ups creation.
+> Very simple yeoman generator to allow simple Jade/LESS mock-ups creation.
 
 ## Getting Started
 
 Install `yeoman` and `generator-salsa-ui`:
   ```
-  npm install -g yo generator-salsa-ui
+  npm install -g yo generator-salsa-ui-jade
   ```
 
 Make a new directory, and `cd` into it:
@@ -16,7 +16,7 @@ Make a new directory, and `cd` into it:
 
 Run `yo salsa-ui app-name`, passing app name:
   ```
-  yo salsa-ui my-new-app-name
+  yo salsa-ui-jade my-new-app-name
   ```
 
 ## Usage

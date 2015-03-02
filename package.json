@@ -1,10 +1,10 @@
 {
-  "name": "generator-salsa-ui",
+  "name": "generator-salsa-ui-jade",
   "version": "0.1.0",
-  "description": "Salsita's generator for UI prototyping",
+  "description": "Salsita's Jade version of generator for UI prototyping",
   "repository": {
     "type": "git",
-    "url": "git://github.com/salsita/generator-salsa-ui.git"
+    "url": "git://github.com/caryfuk/generator-salsa-ui-jade"
   },
   "keywords": [
     "yeoman-generator"
