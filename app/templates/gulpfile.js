@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('less', function() {
   gulp.src('public/src/less/style.less')
     .pipe(sourcemaps.init())
-    .pipe(less({compress: true}))
+    .pipe(less({compress: true}).on('error', console.error.bind(console)))
     .pipe(autoprefixer())
     .pipe(minifyCss({keepBreaks: false}))
     .pipe(sourcemaps.write())
