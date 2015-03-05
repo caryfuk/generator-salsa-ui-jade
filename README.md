@@ -22,10 +22,8 @@ Run `yo salsa-ui app-name`, passing app name:
 
 ## Usage
 
-In the project template run following commands
+In the project template run:
   ```
-  npm install
-  bower install
   gulp
   ```
 

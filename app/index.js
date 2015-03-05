@@ -3,7 +3,7 @@ var generators = require('yeoman-generator');
 module.exports = generators.Base.extend({
   writing: function() {
     if (arguments.length < 1) {
-      throw new Error('Missing arugment');
+      throw new Error('Missing arugment. Expecting name of your app.');
     }
 
     this.fs.copyTpl(
@@ -15,5 +15,8 @@ module.exports = generators.Base.extend({
     );
 
     this.fs.copy(this.templatePath('.*'), this.destinationRoot());
+  },
+  install: function() {
+    this.installDependencies();
   }
 });
