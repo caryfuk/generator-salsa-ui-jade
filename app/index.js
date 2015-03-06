@@ -18,5 +18,8 @@ module.exports = generators.Base.extend({
   },
   install: function() {
     this.installDependencies();
+  },
+  end: function() {
+    console.log('\nRock and roll!\nType gulp to start server with livereload at localhost:3000');
   }
 });
