@@ -43,7 +43,9 @@ gulp.task('jade', function() {
       console.log(data);
       return data;
     }))
-    .pipe(jade().on('error', console.error.bind(console)))
+    .pipe(jade({
+      pretty: true
+    }).on('error', console.error.bind(console)))
     .pipe(gulp.dest(DIST_PATH))
     .pipe(livereload());
 });
